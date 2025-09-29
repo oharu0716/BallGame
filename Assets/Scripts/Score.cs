@@ -4,7 +4,7 @@ using UnityEngine;
 public class Score : MonoBehaviour
 {
     public TextMeshProUGUI score_text;
-    int score = 0;
+    public static int score = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

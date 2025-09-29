@@ -37,7 +37,7 @@ public class BallController : MonoBehaviour
             count++;
         }
 
-        if (count == 3)
+        if (count == 3 || Score.score == 10)
         {
             StartCoroutine(DoAfterDelay());
         }
@@ -52,9 +52,11 @@ public class BallController : MonoBehaviour
 
     System.Collections.IEnumerator DoAfterDelay()
     {
-        yield return new WaitForSeconds(5f); // 10秒待つ
+        
+        yield return new WaitForSeconds(7f); // 7秒待つ
+        Score.score = 0;
         // 現在アクティブなシーンの名前を取得
-            string currentSceneName = SceneManager.GetActiveScene().name;
+        string currentSceneName = SceneManager.GetActiveScene().name;
 
             // そのシーンを再読み込み
             SceneManager.LoadScene(currentSceneName);
