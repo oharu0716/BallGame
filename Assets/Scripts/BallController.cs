@@ -3,6 +3,7 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     public GameObject ball;
+    public float baseWidth;
     // Start is call
     // ed once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,5 +30,11 @@ public class BallController : MonoBehaviour
                 Quaternion.identity
             );
         }
+    }
+
+    Vector3 GetInstantiatePosition()
+    {
+        float z = baseWidth * (Input.mousePosition.z / Screen.width) - (baseWidth / 2);
+        return transform.position + new Vector3(77f, 6.5f, z);
     }
 }

@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 8083713252455853566, guid: ca271cb655ee6334c86ee2d79e399343, type: 3}
+  baseWidth: 9
 --- !u!4 &296186577
 Transform:
   m_ObjectHideFlags: 0
