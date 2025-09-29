@@ -6,6 +6,7 @@ public class BallController : MonoBehaviour
     public GameObject[] balls;
     public float baseWidth;
     int count = 0;
+    public static int shootCount = 3;
     // Start is call
     // ed once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,6 +36,7 @@ public class BallController : MonoBehaviour
             );
 
             count++;
+            shootCount--;
         }
 
         if (count == 3 || Score.score == 10)
@@ -55,6 +57,7 @@ public class BallController : MonoBehaviour
         
         yield return new WaitForSeconds(7f); // 7秒待つ
         Score.score = 0;
+        shootCount = 3;
         // 現在アクティブなシーンの名前を取得
         string currentSceneName = SceneManager.GetActiveScene().name;
 
