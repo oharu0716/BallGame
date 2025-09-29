@@ -434,29 +434,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 529524594391950421, guid: 335d03049e78f6c4184a63a5f61e5fea, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 141
-      objectReference: {fileID: 0}
     - target: {fileID: 1856536218587397333, guid: 335d03049e78f6c4184a63a5f61e5fea, type: 3}
       propertyPath: m_Name
       value: Stages
-      objectReference: {fileID: 0}
-    - target: {fileID: 1919728479719927283, guid: 335d03049e78f6c4184a63a5f61e5fea, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 117.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 1919728479719927283, guid: 335d03049e78f6c4184a63a5f61e5fea, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 28.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 1919728479719927283, guid: 335d03049e78f6c4184a63a5f61e5fea, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1998693371068651812, guid: 335d03049e78f6c4184a63a5f61e5fea, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 141.1
       objectReference: {fileID: 0}
     - target: {fileID: 9156225167402222055, guid: 335d03049e78f6c4184a63a5f61e5fea, type: 3}
       propertyPath: m_LocalPosition.x
